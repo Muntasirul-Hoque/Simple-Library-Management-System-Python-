@@ -6,8 +6,8 @@ A simple Python-based system to manage books in a library. Users can view, borro
 - **View All Books**: Displays all books in the library.
 - **Borrow Book**: Borrow a book if available.
 - **Return Book**: Return a borrowed book.
-- **Error Handling**: Handles invalid book ID, borrowing already borrowed books, and returning books not borrowed.
-- **Data Privacy**: Book attributes are protected to ensure privacy.
+- **Error Handling**: Invalid book ID when borrowing or returning a book. Trying to borrow a book that is already borrowed. Trying to return a book that is not borrowed.
+- **Data Privacy**: Book attributes are protected.
 
 ## Classes
 ### `Library`
@@ -17,4 +17,4 @@ A simple Python-based system to manage books in a library. Users can view, borro
 - Represents individual books with methods:
   - `borrow_book()`: Borrow a book.
   - `return_book()`: Return a book.
-  - `view_book_info()`: View book details.
+  - `view_book_info()`: View book info.

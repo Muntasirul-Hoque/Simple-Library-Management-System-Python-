@@ -28,7 +28,7 @@ class Book:
             self._availability = True
             print(f"'{self._title}' has been successfully returned.")
         else:
-            print(f"'{self._title}' is not borrowed, so it cannot be returned.")
+            print(f"'{self._title}' is not borrowed.")
 
     # -- Info
     def view_book_info(self):
@@ -88,7 +88,7 @@ def menu():
             
             elif choice == 4:
                 print("Exiting the system...")
-                break  # Exit the loop
+                break
             
             else:
                 print("Invalid choice. Please enter a valid option.")

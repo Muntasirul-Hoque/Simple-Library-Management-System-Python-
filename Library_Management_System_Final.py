@@ -18,7 +18,7 @@ class Book:
     def borrow_book(self):
         if self._availability:
             self._availability = False
-            print(f"'{self._title}' has been successfully borrowed.")
+            print(f"'{self._title}' borrowed successfully.")
         else:
             print(f"'{self._title}' is already borrowed.")
 
@@ -26,7 +26,7 @@ class Book:
     def return_book(self):
         if not self._availability:
             self._availability = True
-            print(f"'{self._title}' has been successfully returned.")
+            print(f"'{self._title}' returned  successfully.")
         else:
             print(f"'{self._title}' is not borrowed.")
 

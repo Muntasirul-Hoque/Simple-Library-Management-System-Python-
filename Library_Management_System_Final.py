@@ -30,7 +30,7 @@ class Book:
         else:
             print(f"'{self._title}' is not borrowed.")
 
-    # -- Info
+    # -- View Info
     def view_book_info(self):
         availability_status = "Available" if self._availability else "Not Available"
         print(f"Book ID: {self._book_id}, Title: {self._title}, Author: {self._author}, Status: {availability_status}")

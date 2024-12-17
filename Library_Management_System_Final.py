@@ -55,16 +55,16 @@ def menu():
         print("4. Exit")
         
         try:
-            choice = int(input("Enter your choice: "))
+            n = int(input("Enter your choice: "))
             
-            if choice == 1:
+            if n == 1:
                 if Library.book_list:
                     for book in Library.book_list:
                         book.view_book_info()
                 else:
                     print("No books in the library.")
             
-            elif choice == 2:
+            elif n == 2:
                 book_id = int(input("Enter the Book ID to borrow: "))
                 found = False
                 for book in Library.book_list:
@@ -75,7 +75,7 @@ def menu():
                 if not found:
                     print("Invalid Book ID.")
             
-            elif choice == 3:
+            elif n == 3:
                 book_id = int(input("Enter the Book ID to return: "))
                 found = False
                 for book in Library.book_list:
@@ -86,7 +86,7 @@ def menu():
                 if not found:
                     print("Invalid Book ID.")
             
-            elif choice == 4:
+            elif n == 4:
                 print("Exiting the system...")
                 break
             
